@@ -24,21 +24,11 @@ function removeLastProduct() {
   products.pop();
 }
 
-// Export all functions and the array for testing
+// ✅ Final and only export statement
 module.exports = {
-  products,
   logFirstProduct,
   addProduct,
   updateProductName,
   removeLastProduct,
-};
-
-
-// Export the necessary parts for testing
-module.exports = {
-  logFirstProduct: typeof logFirstProduct !== 'undefined' ? logFirstProduct : undefined,
-  addProduct: typeof addProduct !== 'undefined' ? addProduct : undefined,
-  updateProductName: typeof updateProductName !== 'undefined' ? updateProductName : undefined,
-  removeLastProduct: typeof removeLastProduct !== 'undefined' ? removeLastProduct : undefined,
   products
 };
